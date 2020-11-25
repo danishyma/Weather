@@ -1,0 +1,102 @@
+/* Generic styling */
+:root {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  margin: 0;
+  padding: 0;
+  color: white;
+  background: linear-gradient(rgb(47, 150,163), rgb(48,62,143));
+  font-family: sans-serif;
+}
+
+.app-wrap{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 2455, 255, 0.342)
+}
+
+/* Weather App */
+
+.weather-wrap{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.weather-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-input input {
+  text-align: center;
+  width: 100%;
+  max-width: 15rem;
+  margin: 1rem;
+  padding: 0.6rem;
+  border: none;
+  outline: none;
+  color: #313131;
+  background-color: rgba(255, 255, 255, 0.363);
+  border-radius: 2px;
+  border-bottom: 2px solid rgba(60, 0, 128, 0.589);
+  transition: 0.2s ease-out;
+}
+
+.weather-input input:focus {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 0.6rem 1rem;
+}
+
+.weather-body {
+  padding: 0.5rem;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.location .date {
+  font-size: 0.7rem;
+}
+
+.location .city {
+  font-size: 1.5rem;
+  margin: 10px;
+}
+
+.weather-current .temp {
+  font-size: 2.3rem;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.678);
+  margin: 0.7rem;
+}
+
+.weather-current .icon {
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+  filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, 0.3));
+}
+
+.weather-current .weather{
+  text-transform: capitalize;
+  font-size: 0.8rem
+}
+
+
